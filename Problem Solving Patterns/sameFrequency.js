@@ -6,7 +6,7 @@ function sameFrequency(num1, num2) {
     const counter = {}
 
     for (let num of num1.toString()) {
-        counter[num] = (counter[num] || 0) + 1
+        counter[num] ? counter[num] += 1 : counter[num] = 1
     }
 
     for (let num of num2.toString()) {
